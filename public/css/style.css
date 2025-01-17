@@ -1,0 +1,181 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+/* Navbar */
+.navbar {
+    height: 5rem;
+    background-color: #fff;
+}
+
+.fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #222 !important;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 150%;
+}
+
+.search-btn {
+    width: 25% !important;
+    padding: 0 1rem 0 1rem;
+}
+
+.search-input {
+    border-radius: 50px !important;
+    width: 70% !important;
+    height: 2.5rem;
+}
+
+/* Footer */
+.f-info-links a {
+    text-decoration: none;
+    color: #222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socials i {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.f-info {
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+/* Cards */
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text p {
+    font-weight: 400;
+}
+
+.listing-link {
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+/* Card Effect */
+.card-img-overlay {
+    opacity: 0;
+    transition: 0.3s ease;
+}
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: #fff;
+}
+
+.listing-link:active {
+    transform: scale(0.9);
+}
+
+/* New and Edit Page */
+.custom-btn {
+    border: 0.1rem solid #fe424d;
+    height: 2.5rem;
+    width: 18%;
+    color: #fff;
+    background-color: #fe424d;
+    border-radius: 100px;
+    transition: 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #fff;
+    color: #fe424d;
+}
+
+.custom-btn:active {
+    transform: scale(0.9);
+}
+
+/* Show Page */
+.show-img {
+    height: 30vh;
+}
+
+.show-btn {
+    display: inline;
+    text-decoration: none;
+}
+
+.del-btn {
+    border: 0.1rem solid #2b2b2b;
+    background-color: #2b2b2b;
+}
+
+.del-btn:hover {
+    color: #2b2b2b;
+}
+
+.show-card {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.review-btn {
+    width: 12%;
+}
+
+.form-border {
+    border: 1px solid #bbb !important;
+}
+
+.edit-img {
+    width: 250px;
+}
+
+/* Map */
+#map {
+    height: 400px;
+    width: 80vh;
+    border-radius: 2%;
+    border: 1px solid #ddd;
+}

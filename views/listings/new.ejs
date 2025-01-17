@@ -1,0 +1,114 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="row mt-3">
+    <div class="col-8 offset-2">
+        <h3>Create a new Listing</h3>
+        <br />
+        <form
+            method="post"
+            action="/listings"
+            class="needs-validation"
+            novalidate
+            enctype="multipart/form-data"
+        >
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input
+                    type="text"
+                    name="listing[title]"
+                    placeholder="Add a catchy title"
+                    class="form-control form-border"
+                    id="title"
+                    required
+                />
+                <div class="invalid-feedback">Please enter a title!</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea
+                    type="text"
+                    name="listing[description]"
+                    class="form-control form-border"
+                    id="description"
+                    placeholder="Add a catchy description"
+                    required
+                ></textarea>
+                <div class="invalid-feedback">Please enter a description!</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="image" class="form-label"
+                    >Upload Listing Image</label
+                >
+                <input
+                    type="file"
+                    name="listing[image]"
+                    class="form-control form-border"
+                    id="image"
+                    required
+                />
+                <div class="invalid-feedback">Please upload an image!</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="location" class="form-label">Location</label>
+                <input
+                    type="text"
+                    name="listing[location]"
+                    placeholder="Where in the world is this?"
+                    class="form-control form-border"
+                    id="location"
+                    required
+                />
+                <div class="invalid-feedback">
+                    Please enter correct location!
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="mb-3 col-md-4">
+                    <label for="price" class="form-label">Price</label>
+                    <div class="input-group">
+                        <span
+                            class="input-group-text form-border"
+                            id="basic-addon1"
+                            >$</span
+                        >
+                        <input
+                            type="number"
+                            name="listing[price]"
+                            placeholder="1000"
+                            class="form-control form-border"
+                            id="price"
+                            required
+                        />
+                        <div class="invalid-feedback">Please enter price!</div>
+                    </div>
+                </div>
+
+                <div class="mb-3 col-md-8">
+                    <label for="country" class="form-label">Country</label>
+                    <select
+                        id="country"
+                        class="form-control form-border"
+                        name="listing[country]"
+                        required
+                    >
+                        <option value="" selected>-Select your country-</option>
+                        <% for (let c of Countries.data) { %>
+                        <option value="<%= c.country %>">
+                            <%= c.country %>
+                        </option>
+                        <% } %>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select the country!
+                    </div>
+                </div>
+            </div>
+            <button class="mb-3 mt-3 custom-btn">Add</button>
+        </form>
+        <br />
+    </div>
+</div>

@@ -1,0 +1,69 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="row mt-3">
+    <div class="col-6 offset-3">
+        <h3>SignUp for Wanderlust</h3>
+        <br />
+        <form
+            method="post"
+            action="/signup"
+            class="needs-validation"
+            novalidate
+        >
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input
+                        type="text"
+                        name="user[username]"
+                        placeholder="Create a good username"
+                        class="form-control"
+                        id="username"
+                        required
+                    />
+                    <div class="invalid-feedback">Please enter a username!</div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                    type="email"
+                    name="user[email]"
+                    placeholder="Enter your email"
+                    class="form-control"
+                    id="email"
+                    required
+                />
+                <div class="invalid-feedback">Please enter a valid email!</div>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">New Password</label>
+                <input
+                    type="password"
+                    name="user[password]"
+                    placeholder="Create a strong password"
+                    class="form-control"
+                    id="password"
+                    required
+                />
+                <div class="invalid-feedback">Please enter a password!</div>
+            </div>
+            <div class="mb-3">
+                <label for="confirmPassword" class="form-label"
+                    >Confirm Password</label
+                >
+                <input
+                    type="password"
+                    name="user[confirmPassword]"
+                    placeholder="Enter the same password"
+                    class="form-control"
+                    id="confirmPassword"
+                    required
+                />
+                <div class="invalid-feedback">Please enter the password!</div>
+            </div>
+            <button class="mb-3 mt-3 custom-btn">SignUp</button>
+        </form>
+    </div>
+</div>
