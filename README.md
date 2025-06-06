@@ -73,7 +73,7 @@ If you want to run this project locally or make changes of your own, follow thes
 git clone https://github.com/Koustav2908/Wanderlust.git
 
 # 2. Navigate into the project folder
-cd Wanderlust
+cd wanderlust
 
 # 3. Install the dependencies
 npm install
