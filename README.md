@@ -60,9 +60,7 @@ Wanderlust is a full-stack web application inspired by Airbnb. It allows users t
 
 ## 🚀 Live Demo
 
-```bash
 Check out the live site: [Wanderlust](https://wanderlust-bnmr.onrender.com/listings)
-```
 
 ## 👨‍💻 Getting Started
 
